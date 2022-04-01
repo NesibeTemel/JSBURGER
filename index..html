@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hamburger Sipariş Ekranı</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h3>HAMBURGER SİPARİŞ EKRANI</h3>  
+  <form action="" id="formburger">
+      <label for="listeBurger">Hamburger Ekmek Boyutunu Seçiniz</label>
+      <select name="" id="listeBurger">
+          <option value="4">Küçük Boy Ekmek</option>
+          <option value="7">Orta Boy Ekmek</option>
+          <option value="10">Büyük Boy Ekmek</option>
+      </select>
+      <label for="listeMalzeme">Hamburger Ürünlerini Seçiniz: </label>
+      <span>
+        <label for="ek1">Et Köfte</label>
+        <input type="checkbox" name="burgerUrunler" id="ek1">
+        <label for="ek2"> Tavuk Köfte</label>
+        <input type="checkbox" name="burgerUrunler" id="ek2">
+        <label for="ek3">Turşu</label>
+        <input type="checkbox" name="burgerUrunler" id="ek3">
+        <label for="ek4">Marul</label>
+        <input type="checkbox" name="burgerUrunler" id="ek4">
+        <label for="ek5">Karamelize Soğan</label>
+        <input type="checkbox" name="burgerUrunler" id="ek5">
+        <label for="ek6">Ketçap</label>
+        <input type="checkbox" name="burgerUrunler" id="ek6">
+        <label for="ek7">Mayonez</label>
+        <input type="checkbox" name="burgerUrunler" id="ek7">
+        <label for="ek8">Ara Ekmek</label>
+        <input type="checkbox" name="burgerUrunler" id="ek8">
+        <label for="ek9">Ranch Sos</label>
+        <input type="checkbox" name="burgerUrunler" id="ek9">
+        <label for="ek10">Acı Sos</label>
+        <input type="checkbox" name="burgerUrunler" id="ek10">
+        <label for="ek11">Sarımsaklı Mayonez</label>
+        <input type="checkbox" name="burgerUrunler" id="ek10">
+
+    </span>
+    <label for="listeSecim">Seçtiğiniz burger malzemeleri:</label>
+    <select name="" id="listeSecim" size="6">
+
+    </select>
+
+    <label for="grupIndirim">İndirim kodunu giriniz:</label>
+    <span>
+        <label for="kodTrue">İndirim kodum var</label>
+        <input type="radio" name="grupIndirim" id="kodTrue" value="Aktif" onchange="toogle();">
+        <label for="kodFalse">İndirim kodum yok</label>
+        <input type="radio" name="grupIndirim" id="kodFalse" value="Pasif" onchange="toogle();" checked>           
+    </span>
+    <label for="txtIndirimKodu">İndirim kodunu giriniz:</label>
+    <input type="text" name="" id="txtIndirimKodu" disabled >
+    <input type="button" value="Hesapla" id="btnHesapla" onclick="BurgerHesapla">
+  </form>
+  <h5 id="sonuc"></h5>
+  <script src="main.js"></script>
+</body>
+</html>
